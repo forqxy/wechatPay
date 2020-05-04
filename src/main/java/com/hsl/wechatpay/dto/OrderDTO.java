@@ -2,6 +2,8 @@ package com.hsl.wechatpay.dto;
 
 import com.hsl.wechatpay.domain.OrderDetail;
 import com.hsl.wechatpay.enums.OrderStatusEnum;
+import lombok.Data;
+
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
@@ -11,6 +13,7 @@ import java.util.List;
  * Time:星期日  22:47
  * desc:<一句话简述功能>
  */
+@Data
 public class OrderDTO {
 
     private String orderId;

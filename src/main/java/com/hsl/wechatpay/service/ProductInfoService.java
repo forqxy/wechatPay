@@ -1,6 +1,7 @@
 package com.hsl.wechatpay.service;
 
 import com.hsl.wechatpay.domain.ProductInfo;
+import com.hsl.wechatpay.dto.CartDto;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -25,4 +26,7 @@ public interface ProductInfoService {
     ProductInfo save(ProductInfo productInfo);
 
     //加减库存
+    void increaseStock(List<CartDto> cartDtoList);
+
+    void decreaseStock(List<CartDto> cartDtoList);
 }

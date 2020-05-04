@@ -10,7 +10,12 @@ import lombok.Getter;
 @Getter
 public enum ProductStatusEnum {
     UP(0,"在架"),
-    DOWN(1,"下架");
+    DOWN(1,"下架"),
+
+    /**
+     * 异常枚举值
+     */
+    PRODUCT_NOT_EXIST(10,"商品不存在");
 
     private Integer status;
     private String msg;
